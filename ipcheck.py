@@ -1,8 +1,10 @@
 #! /usr/bin/env python3
 #SHEBANG
+#copyright (c) Dinesh_Kumar_Palanivelu #Save file as <title>.py in your preferred location. Then start typing
 import re
 from loguru import logger
 from time import sleep
+#import modules with methods in this space
 
 
 def ipchecker():
@@ -17,7 +19,7 @@ def ipchecker():
             print('please enter an integer')
         else:
             if (int(a[0])==127):
-                answer=input('this is a loopback ip address do you wish to continue')
+                answer=input('This is a loopback ip address do you wish to continue(yes/no):')
                 if answer=='yes' or answer=='y':
                     continue
                 else:
@@ -32,6 +34,7 @@ def dikupaipchecker():
 #write your main function here 
        try:
               ipchecker()
+          
        except KeyboardInterrupt:
               print("Exiting because of program interpreted by user"); print("Thanks for using my application");       
               
